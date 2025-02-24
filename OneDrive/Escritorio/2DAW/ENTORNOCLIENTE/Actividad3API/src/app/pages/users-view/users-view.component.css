@@ -1,0 +1,8 @@
+.btn-container .btn {
+    font-size: 10px;  /* Tamaño de fuente más pequeño */
+    padding: 4px 8px;  /* Padding reducido */
+    border-radius: 4px;  /* Bordes redondeados */
+    min-width: 60px;  /* Tamaño mínimo ajustado */
+    height: 26px;  /* Altura ajustada */
+    line-height: 1;  /* Espaciado interno reducido */
+}

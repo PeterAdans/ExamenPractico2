@@ -1,0 +1,17 @@
+<div class="card mb-3 text-center shadow-sm p-4">
+    <div class="d-flex flex-column align-items-center">
+        <!-- Imagen centrada con mayor tamaño -->
+        <img [src]="miUsuario.image" class="img-fluid rounded-circle border border-3 shadow-sm mb-3"
+             [alt]="miUsuario.first_name" width="180" height="180">
+
+        <!-- Nombre completo con mayor separación -->
+        <h4 class="card-title mt-2 fw-bold">{{ miUsuario.first_name }} {{ miUsuario.last_name }}</h4>
+        
+        <!-- Botonera centrada -->
+        <div class="d-flex justify-content-center mt-3 w-100">
+            <app-botonera [parent]="'card'" [_id]="miUsuario._id" size="small"></app-botonera>
+        </div>
+    </div>
+</div>
+
+

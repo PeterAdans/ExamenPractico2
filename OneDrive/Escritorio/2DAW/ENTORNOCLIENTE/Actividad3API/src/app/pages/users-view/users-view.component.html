@@ -1,0 +1,24 @@
+<section class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4 d-flex align-items-center" style="width: 70%; min-height: 400px;">
+        <div class="row w-100 align-items-center text-center">
+            <!-- Imagen de usuario centrada con margen uniforme -->
+            <div class="col-md-5 d-flex justify-content-center">
+                <img class="img-fluid rounded-circle border border-3 shadow-sm"
+                     [src]="miUsuario.image" [alt]="miUsuario.first_name"
+                     style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+
+            <!-- Información del usuario centrada con margen uniforme -->
+            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center border-start ps-4">
+                <h3 class="fw-bold">{{ miUsuario.first_name }} {{ miUsuario.last_name }}</h3>
+                <p class="text-muted fs-5">{{ miUsuario.username }}</p>
+                <p class="fw-light fs-7">{{ miUsuario.email }}</p>
+
+                <!-- Botonera centrada con botones pequeños -->
+                <div class="mt-3 d-flex gap-1 btn-container">
+                    <app-botonera [parent]="'view'" [_id]="miUsuario._id"></app-botonera>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
