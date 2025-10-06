@@ -1,0 +1,7 @@
+<div class="row">
+    @for(productos of arrProductos; track productos._id){
+    <article class="col-12 col-md-6 col-sd-3">
+        <app-product-card [miProducto]="productos"></app-product-card>
+    </article>
+    }
+</div>
